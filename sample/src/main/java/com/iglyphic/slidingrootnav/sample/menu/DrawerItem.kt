@@ -1,4 +1,4 @@
-package com.yarolegovich.slidingrootnav.sample.menu
+package com.iglyphic.slidingrootnav.sample.menu
 
 import android.view.ViewGroup
 

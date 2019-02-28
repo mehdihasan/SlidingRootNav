@@ -1,4 +1,4 @@
-package com.yarolegovich.slidingrootnav.sample.menu
+package com.iglyphic.slidingrootnav.sample.menu
 
 import android.graphics.drawable.Drawable
 import android.view.LayoutInflater
@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 
-import com.yarolegovich.slidingrootnav.sample.R
+import com.iglyphic.slidingrootnav.sample.R
 
 /**
  * Created by yarolegovich on 25.03.2017.

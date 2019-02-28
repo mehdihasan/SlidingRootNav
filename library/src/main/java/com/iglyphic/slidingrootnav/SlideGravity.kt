@@ -1,4 +1,4 @@
-package com.yarolegovich.slidingrootnav
+package com.iglyphic.slidingrootnav
 
 import androidx.customview.widget.ViewDragHelper
 

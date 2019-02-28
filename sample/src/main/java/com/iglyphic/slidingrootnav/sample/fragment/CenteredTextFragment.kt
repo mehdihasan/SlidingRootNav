@@ -1,4 +1,4 @@
-package com.yarolegovich.slidingrootnav.sample.fragment
+package com.iglyphic.slidingrootnav.sample.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import android.widget.Toast
 
-import com.yarolegovich.slidingrootnav.sample.R
+import com.iglyphic.slidingrootnav.sample.R
 
 
 /**

@@ -6,7 +6,6 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.3.1'
-        classpath 'com.novoda:bintray-release:0.5.0'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
@@ -24,12 +23,16 @@ task clean(type: Delete) {
 }
 
 ext {
-    userOrg = 'yarolegovich'
-    groupId = 'com.yarolegovich'
-    uploadName = 'SlidingRootNav'
+    userOrg = 'mehdihasan'
+    groupId = 'com.mehdi'
+    uploadName = 'sliding-root-nav-kotlin'
+    artifactId = 'sliding-root-nav-kotlin'
     description = 'DrawerLayout-like ViewGroup, where a "drawer" is hidden under the content view, which can be shifted to make the drawer visible.'
     publishVersion = '1.1.0'
     licences = ['Apache-2.0']
+    repoName = 'SlidingRootNavKotlin'
+    desc = 'DrawerLayout-like ViewGroup, where a "drawer" is hidden under the content view, which can be shifted to make the drawer visible.'
+    website = 'https://github.com/mehdihasan/SlidingRootNav'
 
     compileSdkVersion = 28
     minSdkVersion = 16

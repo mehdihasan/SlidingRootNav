@@ -1,7 +1,7 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-android'
-apply plugin: 'com.novoda.bintray-release'
+
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
@@ -14,19 +14,10 @@ android {
 
 dependencies {
     implementation "androidx.appcompat:appcompat:$supportLibVersion"
-    implementation "androidx.annotation:annotation:1.0.1"
+    implementation "androidx.annotation:annotation:1.0.2"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
 
-publish {
-    artifactId = 'sliding-root-nav'
-    userOrg = rootProject.userOrg
-    groupId = rootProject.groupId
-    uploadName = rootProject.uploadName
-    publishVersion = rootProject.publishVersion
-    description = rootProject.description
-    licences = rootProject.licences
-}
 repositories {
     mavenCentral()
 }

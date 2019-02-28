@@ -1,10 +1,10 @@
-package com.yarolegovich.slidingrootnav.util
+package com.iglyphic.slidingrootnav.util
 
 import android.content.Context
 import android.view.MotionEvent
 import android.view.View
 
-import com.yarolegovich.slidingrootnav.SlidingRootNavLayout
+import com.iglyphic.slidingrootnav.SlidingRootNavLayout
 
 /**
  * Created by yarolegovich on 26.03.2017.

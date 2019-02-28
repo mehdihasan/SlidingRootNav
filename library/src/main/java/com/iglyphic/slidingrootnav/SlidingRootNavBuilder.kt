@@ -1,4 +1,4 @@
-package com.yarolegovich.slidingrootnav
+package com.iglyphic.slidingrootnav
 
 import android.app.Activity
 import android.os.Bundle
@@ -11,16 +11,16 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 
-import com.yarolegovich.slidingrootnav.callback.DragListener
-import com.yarolegovich.slidingrootnav.callback.DragStateListener
-import com.yarolegovich.slidingrootnav.transform.CompositeTransformation
-import com.yarolegovich.slidingrootnav.transform.ElevationTransformation
-import com.yarolegovich.slidingrootnav.transform.RootTransformation
-import com.yarolegovich.slidingrootnav.transform.ScaleTransformation
-import com.yarolegovich.slidingrootnav.transform.YTranslationTransformation
-import com.yarolegovich.slidingrootnav.util.ActionBarToggleAdapter
-import com.yarolegovich.slidingrootnav.util.DrawerListenerAdapter
-import com.yarolegovich.slidingrootnav.util.HiddenMenuClickConsumer
+import com.iglyphic.slidingrootnav.callback.DragListener
+import com.iglyphic.slidingrootnav.callback.DragStateListener
+import com.iglyphic.slidingrootnav.transform.CompositeTransformation
+import com.iglyphic.slidingrootnav.transform.ElevationTransformation
+import com.iglyphic.slidingrootnav.transform.RootTransformation
+import com.iglyphic.slidingrootnav.transform.ScaleTransformation
+import com.iglyphic.slidingrootnav.transform.YTranslationTransformation
+import com.iglyphic.slidingrootnav.util.ActionBarToggleAdapter
+import com.iglyphic.slidingrootnav.util.DrawerListenerAdapter
+import com.iglyphic.slidingrootnav.util.HiddenMenuClickConsumer
 
 import java.util.ArrayList
 import java.util.Arrays

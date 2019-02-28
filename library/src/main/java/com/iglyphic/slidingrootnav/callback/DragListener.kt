@@ -1,4 +1,4 @@
-package com.yarolegovich.slidingrootnav.callback
+package com.iglyphic.slidingrootnav.callback
 
 /**
  * Created by yarolegovich on 25.03.2017.

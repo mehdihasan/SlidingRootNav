@@ -1,8 +1,8 @@
-package com.yarolegovich.slidingrootnav.transform
+package com.iglyphic.slidingrootnav.transform
 
 import android.view.View
 
-import com.yarolegovich.slidingrootnav.util.SideNavUtils
+import com.iglyphic.slidingrootnav.util.SideNavUtils
 
 /**
  * Created by yarolegovich on 25.03.2017.

@@ -1,4 +1,4 @@
-package com.yarolegovich.slidingrootnav.util
+package com.iglyphic.slidingrootnav.util
 
 /**
  * Created by yarolegovich on 25.03.2017.

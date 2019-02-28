@@ -1,4 +1,4 @@
-package com.yarolegovich.slidingrootnav
+package com.iglyphic.slidingrootnav
 
 import android.content.Context
 import android.graphics.Rect
@@ -11,9 +11,9 @@ import android.view.View
 import android.view.ViewConfiguration
 import android.widget.FrameLayout
 
-import com.yarolegovich.slidingrootnav.callback.DragListener
-import com.yarolegovich.slidingrootnav.callback.DragStateListener
-import com.yarolegovich.slidingrootnav.transform.RootTransformation
+import com.iglyphic.slidingrootnav.callback.DragListener
+import com.iglyphic.slidingrootnav.callback.DragStateListener
+import com.iglyphic.slidingrootnav.transform.RootTransformation
 
 import java.util.ArrayList
 

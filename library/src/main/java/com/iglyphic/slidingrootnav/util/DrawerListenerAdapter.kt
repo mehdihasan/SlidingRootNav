@@ -1,10 +1,10 @@
-package com.yarolegovich.slidingrootnav.util
+package com.iglyphic.slidingrootnav.util
 
 import androidx.drawerlayout.widget.DrawerLayout
 import android.view.View
 
-import com.yarolegovich.slidingrootnav.callback.DragListener
-import com.yarolegovich.slidingrootnav.callback.DragStateListener
+import com.iglyphic.slidingrootnav.callback.DragListener
+import com.iglyphic.slidingrootnav.callback.DragStateListener
 
 /**
  * Created by yarolegovich on 26.03.2017.

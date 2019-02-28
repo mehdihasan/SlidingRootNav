@@ -1,4 +1,4 @@
-package com.yarolegovich.slidingrootnav.sample
+package com.iglyphic.slidingrootnav.sample
 
 
 import android.graphics.drawable.Drawable
@@ -8,13 +8,13 @@ import androidx.annotation.ColorRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.yarolegovich.slidingrootnav.SlidingRootNav
-import com.yarolegovich.slidingrootnav.SlidingRootNavBuilder
-import com.yarolegovich.slidingrootnav.sample.fragment.CenteredTextFragment
-import com.yarolegovich.slidingrootnav.sample.menu.DrawerAdapter
-import com.yarolegovich.slidingrootnav.sample.menu.DrawerItem
-import com.yarolegovich.slidingrootnav.sample.menu.SimpleItem
-import com.yarolegovich.slidingrootnav.sample.menu.SpaceItem
+import com.iglyphic.slidingrootnav.SlidingRootNav
+import com.iglyphic.slidingrootnav.SlidingRootNavBuilder
+import com.iglyphic.slidingrootnav.sample.fragment.CenteredTextFragment
+import com.iglyphic.slidingrootnav.sample.menu.DrawerAdapter
+import com.iglyphic.slidingrootnav.sample.menu.DrawerItem
+import com.iglyphic.slidingrootnav.sample.menu.SimpleItem
+import com.iglyphic.slidingrootnav.sample.menu.SpaceItem
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.menu_left_drawer.*
 import java.util.*

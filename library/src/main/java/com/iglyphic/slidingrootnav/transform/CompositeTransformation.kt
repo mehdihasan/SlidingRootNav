@@ -1,4 +1,4 @@
-package com.yarolegovich.slidingrootnav.transform
+package com.iglyphic.slidingrootnav.transform
 
 import android.view.View
 

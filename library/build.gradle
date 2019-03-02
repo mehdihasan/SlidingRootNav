@@ -1,7 +1,32 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-android'
+apply plugin: 'com.jfrog.bintray'
+apply plugin: 'com.github.dcendents.android-maven'
 
+ext {
+    bintrayRepo = "SlidingRootNavKotlin"
+    bintrayName = "com.iglyphic.slidingrootnav"
+
+    libraryName = "library"
+    publishedGroupId = "com.iglyphic.slidingrootnav"
+    artifact = "sliding-root-nav-kotlin"
+    libraryVersion = "1.0.0"
+
+    libraryDescription = "Sliding menu for android in kotlin"
+    siteUrl = "https://github.com/mehdihasan/SlidingRootNav"
+    gitUrl = "https://github.com/mehdihasan/SlidingRootNav.git"
+    developerId = "mehdi"
+    developerName = "Mehdi Hasan"
+    developerEmail = "mehdi-bd-84@outlook.com"
+    licenseName = "Apache License, Version 2.0"
+    licenseUrl = "https://opensource.org/licenses/apache2.0.php"
+    allLicenses = ['Apache-2.0']
+}
+
+tasks.withType(Javadoc) {
+    enabled = false
+}
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
@@ -9,6 +34,14 @@ android {
     defaultConfig {
         minSdkVersion 16
         targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
     }
 }
 
@@ -22,3 +55,7 @@ repositories {
     mavenCentral()
 }
 
+if (project.rootProject.file('local.properties').exists()) {
+    apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+    apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
+}

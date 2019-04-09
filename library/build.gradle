@@ -3,27 +3,8 @@ apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-android'
 
 apply plugin: 'com.github.dcendents.android-maven'
-apply plugin: 'com.jfrog.bintray'
+apply plugin: 'com.novoda.bintray-release'
 
-ext {
-    bintrayRepo = "Android"
-    bintrayName = "slidingrootnav"
-
-    libraryName = "library"
-    publishedGroupId = "com.iglyphic.slidingrootnav"
-    artifact = "sliding-root-nav-kotlin"
-    libraryVersion = "1.0.0"
-
-    libraryDescription = "Sliding menu for android in kotlin"
-    siteUrl = "https://github.com/mehdihasan/SlidingRootNav"
-    gitUrl = "https://github.com/mehdihasan/SlidingRootNav.git"
-    developerId = "mehdihasan"
-    developerName = "Mehdi Hasan"
-    developerEmail = "mehdi-bd-84@outlook.com"
-    licenseName = "Apache License, Version 2.0"
-    licenseUrl = "https://opensource.org/licenses/apache2.0.php"
-    allLicenses = ['Apache-2.0']
-}
 
 tasks.withType(Javadoc) {
     enabled = false
@@ -61,83 +42,11 @@ repositories {
 //    apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
 //}
 
-group = publishedGroupId
-version = libraryVersion
-
-install {
-    repositories.mavenInstaller {
-        pom.project {
-            packaging 'aar'
-            groupId publishedGroupId
-            artifactId artifact
-
-            name libraryName
-            description libraryDescription
-            url siteUrl
-
-            licenses {
-                license {
-                    name licenseName
-                    url licenseUrl
-                }
-            }
-            developers {
-                developer {
-                    id developerId
-                    name developerName
-                    email developerEmail
-                }
-            }
-            scm {
-                connection gitUrl
-                developerConnection gitUrl
-                url siteUrl
-            }
-        }
-    }
-}
-
-task sourcesJar(type: Jar) {
-    classifier = 'sources'
-    from android.sourceSets.main.java.srcDirs
-}
-
-task javadoc(type: Javadoc) {
-    source = android.sourceSets.main.java.srcDirs
-    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
-}
-
-task javadocJar(type: Jar, dependsOn: javadoc) {
-    classifier = 'javadoc'
-    from javadoc.destinationDir
-}
-
-artifacts {
-    archives javadocJar
-    archives sourcesJar
-}
-
-Properties properties = new Properties()
-properties.load(project.rootProject.file('local.properties').newDataInputStream())
-
-bintray {
-    user = properties.getProperty("bintray.user")
-    key = properties.getProperty("bintray.apikey")
-
-    configurations = ['archives']
-    pkg {
-        repo = bintrayRepo
-        name = bintrayName
-        desc = libraryDescription
-        websiteUrl = siteUrl
-        vcsUrl = gitUrl
-        licenses = allLicenses
-        dryRun = false
-        publish = true
-        override = false
-        publicDownloadNumbers = true
-        version {
-            desc = libraryDescription
-        }
-    }
+publish {
+    userOrg = 'iglyphic'
+    groupId = 'com.iglyphic'
+    artifactId = 'slidingrootnav'
+    publishVersion = '1.0.1'
+    desc = 'Sliding root nav in kotlin'
+    website = 'https://github.com/mehdihasan/SlidingRootNav'
 }

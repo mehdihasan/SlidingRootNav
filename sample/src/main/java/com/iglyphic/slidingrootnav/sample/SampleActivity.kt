@@ -5,6 +5,7 @@ import android.graphics.drawable.Drawable
 import android.os.Bundle
 import androidx.annotation.ColorInt
 import androidx.annotation.ColorRes
+import androidx.annotation.StyleableRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -103,7 +104,8 @@ class SampleActivity : AppCompatActivity(), DrawerAdapter.OnItemSelectedListener
         val ta = resources.obtainTypedArray(R.array.ld_activityScreenIcons)
         val icons = arrayOfNulls<Drawable>(ta.length())
         for (i in 0 until ta.length()) {
-            val id = ta.getResourceId(i, 0)
+            @StyleableRes
+            val id = ta.getResourceId( i, 0)
             if (id != 0) {
                 icons[i] = ContextCompat.getDrawable(this, id)
             }
